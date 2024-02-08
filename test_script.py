@@ -3,4 +3,5 @@ if __name__ == "__main__":
     from dvclive import Live
 
     params = dvc.api.params_show()
-    Live.log_param(params["x"])
+    with Live() as live:
+        live.log_param("parameter", params["x"])

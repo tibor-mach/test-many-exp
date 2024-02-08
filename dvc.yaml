@@ -1,0 +1,5 @@
+stages:
+  test:
+    cmd: python test_script.py
+params:
+- dvclive/params.yaml
